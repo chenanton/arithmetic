@@ -1,6 +1,6 @@
-#include "questions/MultiplicationQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/MultiplicationQuestionFactory.hh"
+#include "MultiplicationQuestion.hh"
+#include "MultiplicationQuestionFactory.hh"
+#include "Question.hh"
 
 std::pair<int, int> MultiplicationQuestionFactory::getArgs() {
   std::uniform_int_distribution<int> arg1Distr(minArg1, maxArg1);

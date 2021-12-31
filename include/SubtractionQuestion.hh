@@ -1,7 +1,7 @@
 #ifndef SUBTRACTION_QUESTION_H
 #define SUBTRACTION_QUESTION_H
 
-#include "questions/Question.hh"
+#include "Question.hh"
 
 class SubtractionQuestion : public Question {
  public:

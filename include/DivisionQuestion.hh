@@ -1,7 +1,7 @@
 #ifndef DIVISION_QUESTION_H
 #define DIVISION_QUESTION_H
 
-#include "questions/Question.hh"
+#include "Question.hh"
 
 class DivisionQuestion : public Question {
  public:

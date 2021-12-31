@@ -1,7 +1,7 @@
 #ifndef MULTIPLICATION_QUESTION_H
 #define MULTIPLICATION_QUESTION_H
 
-#include "questions/Question.hh"
+#include "Question.hh"
 
 class MultiplicationQuestion : public Question {
  public:

@@ -1,8 +1,8 @@
 #include <random>
 #include <utility>
 
-#include "questions/Question.hh"
-#include "questions/factory/QuestionFactory.hh"
+#include "Question.hh"
+#include "QuestionFactory.hh"
 
 QuestionFactory::QuestionFactory() {
   std::random_device rd;

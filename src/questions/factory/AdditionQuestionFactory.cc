@@ -1,6 +1,6 @@
-#include "questions/AdditionQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/AdditionQuestionFactory.hh"
+#include "AdditionQuestion.hh"
+#include "AdditionQuestionFactory.hh"
+#include "Question.hh"
 
 inline int AdditionQuestionFactory::calculateAnswer(int arg1, int arg2) {
   return arg1 + arg2;

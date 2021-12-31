@@ -4,17 +4,17 @@
 #include <random>
 #include <utility>
 
-#include "questions/Question.hh"
+#include "Question.hh"
 
 class QuestionFactory {
  protected:
   std::mt19937 rng;
 
  public:
-  QuestionFactory();
   Question* getQuestion();
 
  protected:
+  QuestionFactory();
   virtual std::pair<int, int> getArgs() = 0;
   virtual int calculateAnswer(int arg1, int arg2) = 0;
   virtual Question* constructQuestion(int arg1, int arg2, int answer) = 0;

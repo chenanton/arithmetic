@@ -1,9 +1,9 @@
 #ifndef QUESTION_FACTORY_MULTIPLICATION_H
 #define QUESTION_FACTORY_MULTIPLICATION_H
 
-#include "questions/MultiplicationQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/QuestionFactory.hh"
+#include "MultiplicationQuestion.hh"
+#include "Question.hh"
+#include "QuestionFactory.hh"
 
 class MultiplicationQuestionFactory : public QuestionFactory {
   const int minArg1 = 1;

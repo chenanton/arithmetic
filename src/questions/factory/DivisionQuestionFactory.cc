@@ -1,6 +1,6 @@
-#include "questions/DivisionQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/DivisionQuestionFactory.hh"
+#include "DivisionQuestion.hh"
+#include "DivisionQuestionFactory.hh"
+#include "Question.hh"
 
 std::pair<int, int> DivisionQuestionFactory::getArgs() {
   std::uniform_int_distribution<int> arg2Distr(minArg, maxArg);

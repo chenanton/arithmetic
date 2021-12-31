@@ -1,7 +1,7 @@
 #ifndef ADDITION_QUESTION_H
 #define ADDITION_QUESTION_H
 
-#include "questions/Question.hh"
+#include "Question.hh"
 
 class AdditionQuestion : public Question {
  public:

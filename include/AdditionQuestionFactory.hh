@@ -1,9 +1,9 @@
 #ifndef QUESTION_FACTORY_ADDITION_H
 #define QUESTION_FACTORY_ADDITION_H
 
-#include "questions/AdditionQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/QuestionFactory.hh"
+#include "AdditionQuestion.hh"
+#include "Question.hh"
+#include "QuestionFactory.hh"
 
 class AdditionQuestionFactory : public QuestionFactory {
   const int minArg = 1;

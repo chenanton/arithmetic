@@ -1,9 +1,9 @@
 #ifndef QUESTION_FACTORY_DIVISION_H
 #define QUESTION_FACTORY_DIVISION_H
 
-#include "questions/DivisionQuestion.hh"
-#include "questions/Question.hh"
-#include "questions/factory/QuestionFactory.hh"
+#include "DivisionQuestion.hh"
+#include "Question.hh"
+#include "QuestionFactory.hh"
 
 class DivisionQuestionFactory : public QuestionFactory {
   const int minArg = 1;
