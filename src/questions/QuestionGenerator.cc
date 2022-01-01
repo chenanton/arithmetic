@@ -1,18 +1,20 @@
 #include <iostream>
 #include <random>
 
-#include "questions/Question.hh"
-#include "questions/QuestionType.hh"
-#include "questions/factory/AdditionQuestionFactory.hh"
-#include "questions/factory/DivisionQuestionFactory.hh"
-#include "questions/factory/MultiplicationQuestionFactory.hh"
-#include "questions/factory/QuestionFactory.hh"
-#include "questions/factory/SubtractionQuestionFactory.hh"
+#include "AdditionQuestionFactory.hh"
+#include "DivisionQuestionFactory.hh"
+#include "MultiplicationQuestionFactory.hh"
+#include "Question.hh"
+#include "QuestionFactory.hh"
+#include "QuestionGenerator.hh"
+#include "QuestionType.hh"
+#include "SubtractionQuestionFactory.hh"
 
 QuestionGenerator::QuestionGenerator()
     : numQuestions(getNumQuestions()),
       rng(getRNG()),
-      qd(getQuestionDistribution()) {}
+      qd(getQuestionDistribution()),
+      qf(nullptr) {}
 
 QuestionGenerator::~QuestionGenerator() { delete qf; }
 

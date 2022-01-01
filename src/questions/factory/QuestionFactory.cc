@@ -10,6 +10,8 @@ QuestionFactory::QuestionFactory() {
   this->rng = rng;
 }
 
+QuestionFactory::~QuestionFactory() {}
+
 Question* QuestionFactory::getQuestion() {
   std::pair<int, int> args = getArgs();
   int answer = calculateAnswer(args.first, args.second);

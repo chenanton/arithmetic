@@ -2,12 +2,12 @@
 #include "AdditionQuestionFactory.hh"
 #include "Question.hh"
 
-inline int AdditionQuestionFactory::calculateAnswer(int arg1, int arg2) {
+int AdditionQuestionFactory::calculateAnswer(int arg1, int arg2) {
   return arg1 + arg2;
 }
 
-inline Question* AdditionQuestionFactory::constructQuestion(int arg1, int arg2,
-                                                            int answer) {
+Question* AdditionQuestionFactory::constructQuestion(int arg1, int arg2,
+                                                     int answer) {
   return new AdditionQuestion(arg1, arg2, answer);
 }
 

@@ -10,7 +10,7 @@ std::pair<int, int> MultiplicationQuestionFactory::getArgs() {
   return std::pair<int, int>{arg1, arg2};
 }
 
-inline int MultiplicationQuestionFactory::calculateAnswer(int arg1, int arg2) {
+int MultiplicationQuestionFactory::calculateAnswer(int arg1, int arg2) {
   return arg1 * arg2;
 }
 
