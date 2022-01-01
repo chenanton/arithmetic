@@ -6,7 +6,7 @@
 class DivisionQuestion : public Question {
  public:
   DivisionQuestion(int arg1, int arg2, int answer);
-  char getOperator();
+  char getOperator() override;
 };
 
 #endif

@@ -12,6 +12,7 @@ class QuestionFactory {
 
  public:
   Question* getQuestion();
+  virtual ~QuestionFactory();
 
  protected:
   QuestionFactory();

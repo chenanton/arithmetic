@@ -10,9 +10,9 @@ class AdditionQuestionFactory : public QuestionFactory {
   const int maxArg = 100;
 
  protected:
-  std::pair<int, int> getArgs();
-  int calculateAnswer(int arg1, int arg2);
-  Question* constructQuestion(int arg1, int arg2, int answer);
+  std::pair<int, int> getArgs() override;
+  int calculateAnswer(int arg1, int arg2) override;
+  Question* constructQuestion(int arg1, int arg2, int answer) override;
 };
 
 #endif

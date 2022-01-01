@@ -5,6 +5,7 @@
 
 #include "Question.hh"
 #include "QuestionFactory.hh"
+#include "QuestionType.hh"
 
 /* Generates a random question of random type. */
 class QuestionGenerator {

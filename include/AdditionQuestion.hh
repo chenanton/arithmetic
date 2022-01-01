@@ -6,7 +6,7 @@
 class AdditionQuestion : public Question {
  public:
   AdditionQuestion(int arg1, int arg2, int answer);
-  char getOperator();
+  char getOperator() override;
 };
 
 #endif
