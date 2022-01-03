@@ -6,9 +6,9 @@
 #include "QuestionFactory.hh"
 
 class MultiplicationQuestionFactory : public QuestionFactory {
-  const int minArg1 = 1;
+  const int minArg1 = 2;
   const int maxArg1 = 100;
-  const int minArg2 = 1;
+  const int minArg2 = 2;
   const int maxArg2 = 12;
 
  protected:
