@@ -51,5 +51,6 @@ void App::questionUser() {
     } while (!q->checkAnswer(userAnswer));
 
     this->score++;
+    delete q;
   }
 }

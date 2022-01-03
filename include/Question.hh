@@ -8,6 +8,8 @@ class Question {
 
  public:
   Question(int arg1, int arg2, int answer);
+  virtual ~Question();
+
   bool checkAnswer(int);
   int getArg1();
   int getArg2();
