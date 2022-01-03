@@ -59,34 +59,29 @@ AdditionQuestion.o: \
 SubtractionQuestion.o: \
 	${SRC_DIR}/questions/types/SubtractionQuestion.cc \
 	${SRC_DIR}/questions/types/Question.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/SubtractionQuestion.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/SubtractionQuestion.cc -o ${OBJ_DIR}/$@
 
 MultiplicationQuestion.o: \
 	${SRC_DIR}/questions/types/MultiplicationQuestion.cc \
 	${SRC_DIR}/questions/types/Question.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/MultiplicationQuestion.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/MultiplicationQuestion.cc -o ${OBJ_DIR}/$@
 
 DivisionQuestion.o: \
 	${SRC_DIR}/questions/types/DivisionQuestion.cc \
 	${SRC_DIR}/questions/types/Question.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/DivisionQuestion.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/types/DivisionQuestion.cc -o ${OBJ_DIR}/$@
 
 QuestionFactory.o: \
 	${SRC_DIR}/questions/factory/QuestionFactory.cc \
 	${SRC_DIR}/questions/types/Question.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/QuestionFactory.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/QuestionFactory.cc -o ${OBJ_DIR}/$@
 
 AdditionQuestionFactory.o: \
 	${SRC_DIR}/questions/factory/AdditionQuestionFactory.cc \
 	${SRC_DIR}/questions/factory/QuestionFactory.cc \
 	${SRC_DIR}/questions/types/Question.cc \
 	${SRC_DIR}/questions/types/AdditionQuestion.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/AdditionQuestionFactory.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/AdditionQuestionFactory.cc -o ${OBJ_DIR}/$@
 
 SubtractionQuestionFactory.o: \
 	${SRC_DIR}/questions/factory/SubtractionQuestionFactory.cc \
@@ -95,16 +90,14 @@ SubtractionQuestionFactory.o: \
 	${SRC_DIR}/questions/types/Question.cc \
 	${SRC_DIR}/questions/types/SubtractionQuestion.cc \
 	${SRC_DIR}/questions/types/AdditionQuestion.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/SubtractionQuestionFactory.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/SubtractionQuestionFactory.cc -o ${OBJ_DIR}/$@
 
 MultiplicationQuestionFactory.o: \
 	${SRC_DIR}/questions/factory/MultiplicationQuestionFactory.cc \
 	${SRC_DIR}/questions/factory/QuestionFactory.cc \
 	${SRC_DIR}/questions/types/Question.cc \
 	${SRC_DIR}/questions/types/MultiplicationQuestion.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/MultiplicationQuestionFactory.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/MultiplicationQuestionFactory.cc -o ${OBJ_DIR}/$@
 
 DivisionQuestionFactory.o: \
 	${SRC_DIR}/questions/factory/DivisionQuestionFactory.cc \
@@ -113,8 +106,7 @@ DivisionQuestionFactory.o: \
 	${SRC_DIR}/questions/types/Question.cc \
 	${SRC_DIR}/questions/types/DivisionQuestion.cc \
 	${SRC_DIR}/questions/types/MultiplicationQuestion.cc
-	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/DivisionQuestionFactory.cc \
-		-o ${OBJ_DIR}/$@
+	${CC} -c ${CFLAGS} ${SRC_DIR}/questions/factory/DivisionQuestionFactory.cc -o ${OBJ_DIR}/$@
 
 clean:
 	rm -f ${OBJ_DIR}/*.o  ${BIN_DIR}/${TARGET}

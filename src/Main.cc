@@ -4,7 +4,7 @@
 
 int main() {
   int duration;
-  std::cout << "Set time: " << std::endl;
+  std::cout << "ARITHMETIC" << std::endl << "Set time: (s)" << std::endl;
   std::cin >> duration;
 
   App app(duration);
