@@ -5,10 +5,11 @@ BIN_DIR = bin
 TARGET = arithmetic
 
 CC = g++
-CFLAGS = -Wall -I${INC_DIR} -g
+CFLAGS = -Wall -I${INC_DIR} -g -pthread
 
 _OBJECTS = \
 					Main.o \
+					App.o \
 					QuestionGenerator.o \
 					Question.o \
 					AdditionQuestion.o \
@@ -27,8 +28,14 @@ arithmetic: ${_OBJECTS}
 
 Main.o: \
 	${SRC_DIR}/Main.cc \
-	${SRC_DIR}/questions/QuestionGenerator.cc
+	${SRC_DIR}/app/App.cc
 	${CC} -c ${CFLAGS} ${SRC_DIR}/Main.cc -o ${OBJ_DIR}/$@
+
+App.o: \
+	${SRC_DIR}/app/App.cc \
+	${SRC_DIR}/questions/types/Question.cc \
+	${SRC_DIR}/questions/QuestionGenerator.cc
+	${CC} -c ${CFLAGS} ${SRC_DIR}/app/App.cc -o ${OBJ_DIR}/$@
 
 QuestionGenerator.o: \
 	${SRC_DIR}/questions/QuestionGenerator.cc \

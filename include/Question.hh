@@ -12,6 +12,7 @@ class Question {
   int getArg1();
   int getArg2();
   virtual char getOperator() = 0;
+  void print();
 };
 
 #endif

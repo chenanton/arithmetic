@@ -1,23 +1,26 @@
 #include <chrono>
+#include <mutex>
 
 #include "Question.hh"
 #include "QuestionGenerator.hh"
 
 class App {
-  const int DURATION = 120;
-  int score = 0;
+  const std::chrono::seconds DURATION;
+  int score;
 
   QuestionGenerator qg;
-  Question* curQuestion;
+
+  std::mutex mu;
+  bool gameOver;
 
  public:
   App();
-  ~App();
+  App(int duration);
   void startGame();
 
  private:
+  void initGame();
   void runGame();
-  void clearGame();
 
-  int gameDuration(std::chrono::time_point<std::chrono::high_resolution_clock>)
+  void questionUser();
 };

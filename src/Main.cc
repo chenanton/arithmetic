@@ -1,13 +1,13 @@
 #include <iostream>
 
-#include "QuestionGenerator.hh"
+#include "App.hh"
 
 int main() {
-  QuestionGenerator qg;
-  for (int i = 0; i < 10; i++) {
-    Question* q = qg.getQuestion();
-    std::cout << "Question " << i << ": " << q->getArg1() << " "
-              << q->getOperator() << " " << q->getArg2() << std::endl;
-  }
+  int duration;
+  std::cout << "Set time: " << std::endl;
+  std::cin >> duration;
+
+  App app(duration);
+  app.startGame();
   return 0;
 }
